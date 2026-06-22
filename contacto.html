@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GamingHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🎮 GamingHub</div>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#noticias" class="nav-link">Noticias</a>
+                <a href="resenas.html" class="nav-link">Reseñas</a>
+                <a href="index.html#lanzamientos" class="nav-link">Lanzamientos</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+
+            <button class="login-btn">Iniciar sesión</button>
+            <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+    </header>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <section class="hero" style="min-height: 300px;">
+        <div class="hero-content">
+            <h1 class="hero-title">¡Contacta con Nosotros!</h1>
+            <p class="hero-subtitle">¿Tienes preguntas o sugerencias? Nos encantaría escucharte</p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contacto-section">
+        <div class="contacto-container">
+            <div class="formulario-box">
+                <h2>Formulario de Contacto</h2>
+                <form id="contactForm" class="contact-form">
+                    <!-- Campo: Nombre -->
+                    <div class="form-group">
+                        <label for="nombre">📝 Nombre:</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            placeholder="Tu nombre completo" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Campo: Correo -->
+                    <div class="form-group">
+                        <label for="correo">📧 Correo Electrónico:</label>
+                        <input 
+                            type="email" 
+                            id="correo" 
+                            name="correo" 
+                            placeholder="tu@email.com" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Campo: Asunto -->
+                    <div class="form-group">
+                        <label for="asunto">📌 Asunto:</label>
+                        <input 
+                            type="text" 
+                            id="asunto" 
+                            name="asunto" 
+                            placeholder="¿Sobre qué es tu mensaje?" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Campo: Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje">💬 Mensaje:</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            placeholder="Cuéntanos lo que piensas..." 
+                            rows="8"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn btn-primary submit-btn">✉️ Enviar Mensaje</button>
+                </form>
+
+                <!-- Mensaje de éxito -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    ✅ ¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.
+                </div>
+
+                <!-- Mensaje de error -->
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    ❌ Hubo un error. Por favor, verifica los datos e intenta de nuevo.
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="info-box">
+                <h3>📞 Otra Formas de Contactarnos</h3>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@gaminghub.com">info@gaminghub.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">🏢</span>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>123 Gaming Street, Tech City, TC 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes - Viernes: 9:00 AM - 6:00 PM<br>Sábado - Domingo: Cerrado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4>🤝 Síguenos</h4>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="#" class="social-btn">Twitter</a>
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🎮 GamingHub</h4>
+                    <p>Tu sitio favorito de videojuegos</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <p>
+                        <a href="#">Facebook</a> | 
+                        <a href="#">Twitter</a> | 
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@gaminghub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GamingHub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // ============================
+        // FUNCIONALIDAD DEL FORMULARIO
+        // ============================
+
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Obtener los valores del formulario
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Validar que todos los campos estén llenos
+            if (nombre && correo && asunto && mensaje) {
+                // Simular envío (en un proyecto real, aquí irían a una base de datos)
+                console.log('Formulario enviado:');
+                console.log('Nombre:', nombre);
+                console.log('Correo:', correo);
+                console.log('Asunto:', asunto);
+                console.log('Mensaje:', mensaje);
+
+                // Mostrar mensaje de éxito
+                successMessage.style.display = 'block';
+                errorMessage.style.display = 'none';
+
+                // Limpiar formulario
+                form.reset();
+
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            } else {
+                // Mostrar mensaje de error
+                errorMessage.style.display = 'block';
+                successMessage.style.display = 'none';
+            }
+        });
+
+        // Agregar animación a los inputs cuando se escriba
+        document.querySelectorAll('input, textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.style.boxShadow = '0 0 10px rgba(59, 130, 246, 0.5)';
+            });
+
+            input.addEventListener('blur', function() {
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
+<style>
+    /* ========================================
+       SECCIÓN DE CONTACTO
+       ======================================== */
+
+    .contacto-section {
+        padding: 60px 20px;
+        background: var(--bg-page);
+    }
+
+    .contacto-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        animation: fadeIn 0.6s ease-out;
+    }
+
+    /* ========================================
+       FORMULARIO
+       ======================================== */
+
+    .formulario-box {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .formulario-box h2 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--primary-blue);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        border: 2px solid rgba(59, 130, 246, 0.3);
+        border-radius: 8px;
+        background: rgba(59, 130, 246, 0.05);
+        color: var(--text-color);
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary-blue);
+        background: rgba(59, 130, 246, 0.1);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Mensajes de éxito y error */
+    .success-message,
+    .error-message {
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .success-message {
+        background: rgba(16, 185, 129, 0.1);
+        border: 2px solid #10b981;
+        color: #10b981;
+    }
+
+    .error-message {
+        background: rgba(239, 68, 68, 0.1);
+        border: 2px solid #ef4444;
+        color: #ef4444;
+    }
+
+    /* ========================================
+       INFORMACIÓN DE CONTACTO
+       ======================================== */
+
+    .info-box {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-box h3 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+    }
+
+    .info-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding: 15px;
+        background: rgba(59, 130, 246, 0.05);
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+
+    .info-item:hover {
+        background: rgba(59, 130, 246, 0.1);
+        transform: translateX(5px);
+    }
+
+    .info-icon {
+        font-size: 28px;
+        min-width: 40px;
+        text-align: center;
+    }
+
+    .info-item h4 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 5px;
+        color: var(--primary-blue);
+    }
+
+    .info-item p {
+        color: var(--text-gray);
+        font-size: 14px;
+    }
+
+    .info-item a {
+        color: var(--primary-blue);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .info-item a:hover {
+        color: var(--primary-purple);
+    }
+
+    /* Redes sociales */
+    .social-links {
+        border-top: 2px solid rgba(59, 130, 246, 0.2);
+        padding-top: 20px;
+    }
+
+    .social-links h4 {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 15px;
+        color: var(--primary-blue);
+    }
+
+    .social-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background: var(--primary-blue);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+
+    .social-btn:hover {
+        background: var(--primary-purple);
+        transform: translateY(-3px);
+    }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+
+    @media (max-width: 768px) {
+        .contacto-container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .formulario-box,
+        .info-box {
+            padding: 30px;
+        }
+
+        .formulario-box h2 {
+            font-size: 22px;
+        }
+
+        .info-box h3 {
+            font-size: 18px;
+        }
+
+        .social-btn {
+            display: block;
+            width: 100%;
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+</style>

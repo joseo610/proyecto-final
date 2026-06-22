@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingHub - Tu sitio de videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER / BARRA SUPERIOR -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🎮 GamingHub</div>
+            
+            <!-- Menú de navegación -->
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="#noticias" class="nav-link">Noticias</a>
+                <a href="resenas.html" class="nav-link">Reseñas</a>
+                <a href="#lanzamientos" class="nav-link">Lanzamientos</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+
+            <button class="login-btn">Iniciar sesión</button>
+            <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION / PORTADA GRANDE -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Descubre el futuro de los videojuegos</h1>
+            <p class="hero-subtitle">Noticias, reseñas y lanzamientos en un solo lugar</p>
+            <button class="btn btn-primary">Explorar Ahora</button>
+        </div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2>🎞️ Carrusel</h2>
+            <p class="carousel-note">Explora lanzamientos y momentos épicos con imágenes dinámicas desde la web.</p>
+            <div class="carousel">
+                <button class="carousel-button prev" aria-label="Anterior">‹</button>
+                <div class="carousel-window">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <img src="https://images.pexels.com/photos/845896/pexels-photo-845896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imagen de videojuego 1">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/274422/pexels-photo-274422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imagen de videojuego 2">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imagen de videojuego 3">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-button next" aria-label="Siguiente">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JUEGOS DESTACADOS -->
+    <section class="destacados">
+        <div class="container">
+            <h2>🎯 Juegos Destacados</h2>
+            <div class="games-grid">
+                <!-- Tarjeta 1 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: url('gta6.jpeg') center/cover no-repeat;">
+                        <span>GTA VI</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>GTA VI</h3>
+                        <p class="genre">Acción y mundo abierto</p>
+                        <div class="rating">⭐ 9.8/10</div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: url('fc.jpeg') center/cover no-repeat;">
+                        <span>EA Sports FC 26</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>EA Sports FC 26</h3>
+                        <p class="genre">Deportes</p>
+                        <div class="rating">⭐ 9.1/10</div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: url('jp.jpeg') center/cover no-repeat;">
+                        <span>Minecraft</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Minecraft</h3>
+                        <p class="genre">Sandbox</p>
+                        <div class="rating">⭐ 9.5/10</div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="game-card">
+                    <div class="game-image" style="background: url('fornite.jpeg') center/cover no-repeat;">
+                        <span>Fortnite</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>Fortnite</h3>
+                        <p class="genre">Battle Royale</p>
+                        <div class="rating">⭐ 8.9/10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="noticias" id="noticias">
+        <div class="container">
+            <h2>📰 Noticias Importantes</h2>
+            <div class="news-grid">
+                <!-- Noticia GTA VI -->
+                <div class="news-card">
+                    <div class="news-image" style="background: url('gta6.jpeg') center/cover no-repeat;"></div>
+                    <div class="news-content">
+                        <h3>GTA VI rompe récords en pre-órdenes</h3>
+                        <p>Rockstar Games confirmó que GTA VI ya es el juego con más pre-órdenes en la historia, superando todos los récords anteriores.</p>
+                        <a href="noticia1.html" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+
+                <!-- Noticia Fortnite -->
+                <div class="news-card">
+                    <div class="news-image" style="background: url('fornite.jpeg') center/cover no-repeat;"></div>
+                    <div class="news-content">
+                        <h3>Torneo de Fortnite 2026 comienza</h3>
+                        <p>Epic Games anunció el Fortnite World Championship 2026 con $50 millones en premios y jugadores de todo el mundo.</p>
+                        <a href="noticia3.html" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+
+                <!-- Noticia Minecraft -->
+                <div class="news-card">
+                    <div class="news-image" style="background: url('jp.jpeg') center/cover no-repeat;"></div>
+                    <div class="news-content">
+                        <h3>Nueva expansión de Minecraft confirmada</h3>
+                        <p>Microsoft reveló la expansión "Realms Infinitos" para Minecraft, con nuevos biomas, criaturas y magia.</p>
+                        <a href="noticia2.html" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+
+                <!-- Noticia Estrategia -->
+                <div class="news-card">
+                    <div class="news-image" style="background: url('civi7.avif') center/cover no-repeat;"></div>
+                    <div class="news-content">
+                        <h3>Civilization VII prepara nuevas funciones</h3>
+                        <p>Civilization VII anuncia mejoras en IA, equilibrio de civilizaciones y nuevas opciones diplomáticas en su próximo parche.</p>
+                        <a href="noticia7.html" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+
+                <!-- Noticia Deportes -->
+                <div class="news-card">
+                    <div class="news-image" style="background: url('fc.jpeg') center/cover no-repeat;"></div>
+                    <div class="news-content">
+                        <h3>EA Sports FC 26 amplía licencias y estadios</h3>
+                        <p>EA Sports FC 26 incluye nuevos estadios, clubes y asociaciones oficiales para aumentar el realismo del fútbol en el juego.</p>
+                        <a href="noticia8.html" class="btn btn-secondary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRÓXIMOS LANZAMIENTOS -->
+    <section class="lanzamientos" id="lanzamientos">
+        <div class="container">
+            <h2>📅 Próximos Lanzamientos</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Octubre 2026</div>
+                    <div class="timeline-content">
+                        🎮 GTA VI Online Expansion
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Noviembre 2026</div>
+                    <div class="timeline-content">
+                        ⚔️ Assassin's Creed New Era
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Diciembre 2026</div>
+                    <div class="timeline-content">
+                        🔫 Call of Duty 2027 Beta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categorias">
+        <div class="container">
+            <h2>🎮 Categorías de Juegos</h2>
+            <div class="categories-grid">
+                <div class="category-card">🎯 Acción</div>
+                <div class="category-card">⚽ Deportes</div>
+                <div class="category-card">🏎️ Carreras</div>
+                <div class="category-card">⚔️ RPG</div>
+                <div class="category-card">🧟 Terror</div>
+                <div class="category-card">🧩 Estrategia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🎮 GamingHub</h4>
+                    <p>Tu sitio favorito de videojuegos</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <p>
+                        <a href="#">Facebook</a> | 
+                        <a href="#">Twitter</a> | 
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@gaminghub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GamingHub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
